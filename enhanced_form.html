@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form & Content</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background: #ecf0f1;
+            padding: 2em;
+            border-radius: 8px;
+        }
+        fieldset {
+            border: 1px solid #bdc3c7;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 0.5em;
+            color: #34495e;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 0.5em;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Web Development Practice </h1>
+            <p>More learning!!!!!! <br> Learning is fun </p>
+        </header>
+
+        <section>
+            <h2>My Favorite Languages  </h2>
+            <p>Here's a list of Languages,:</p>
+            <h3>Computing languages include: </h3>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>PHP </li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Spoken languages </h3>
+            <ol>
+                <li>English </li>
+                <li>French </li>
+                <li>Kiwahili </li>
+            </ol>
+            <h3>Where computing languages are used: </h3>
+            <dl>
+                <dt>Python </dt>
+                <dd>Mostly used in Data Science.</dd>
+                <dt>C++</dt>
+                <dd>Mostly used along time ago and it is more complex. </dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Product Catalog </h2>
+            <p>A simple table showcasing some products and their features.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>Ksh 50,000</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>Ksh 30,000</td>
+                        <td>Out of Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Headphones</td>
+                        <td>Ksh 3000</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Prices are subject to change.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Media Gallery </h2>
+            <p>Showcasing an image, some background music, and a short video.</p>
+            
+            <h3>Sample Image</h3>
+            <figure>
+                <img src="photo1.jpg" alt="Dark aesthetic." style="max-width: 100%; height: auto; display: block; margin-bottom: 1em;">
+                <figcaption>aesthetic!!!.</figcaption>
+            </figure>
+
+            <h3>Background Music</h3>
+            <p>An audio clip for a pleasant user experience.</p>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>Introduction Video</h3>
+            <p>A brief video.</p>
+            <video width="100%" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Registration Form </h2>
+            <p>Please fill out this form to register. All fields are required unless otherwise noted.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Florence Achieng" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="floachie308@gmail.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-01-01" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Create a unique username" minlength="5" maxlength="15" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Min. 8 characters" minlength="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-url">Profile URL (optional):</label>
+                        <input type="url" id="profile-url" name="profile-url" placeholder="https://example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="form-group">
+                        <label for="newsletter">Newsletter Subscription:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked> I agree to receive the newsletter.
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required> <label for="contact-email" style="display:inline;">Email</label><br>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone"> <label for="contact-phone" style="display:inline;">Phone</label><br>
+                        <input type="radio" id="contact-none" name="contact-method" value="none"> <label for="contact-none" style="display:inline;">No Contact</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="favorite-color">Favorite Color:</label>
+                        <input type="color" id="favorite-color" name="favorite-color" value="#3498db">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Read-Only Field</legend>
+                    <div class="form-group">
+                        <label for="membership">Membership Status:</label>
+                        <input type="text" id="membership" name="membership" value="Pending" readonly>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
